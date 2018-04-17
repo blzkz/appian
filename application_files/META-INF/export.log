@@ -1,0 +1,34 @@
+Éxito (1):
+application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 "SBB"
+
+Celdas precedentes referenciadas que no se exportaron (1):
+user sergio.blazquez sergio.blazquez
+
+Trace:
+2018-04-17 09:57:36.011 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Begin transport.
+2018-04-17 09:57:36.011 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Retrieving object data.
+2018-04-17 09:57:36.021 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 App associated objects: []
+2018-04-17 09:57:36.021 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Invalid associated objects: []
+2018-04-17 09:57:36.021 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Adding valid associated objects to be exported: GlobalBindingMap[]
+2018-04-17 09:57:36.022 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Setting uuids of object references.
+2018-04-17 09:57:36.023 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: Application.forum
+2018-04-17 09:57:36.023 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: Application.parent
+2018-04-17 09:57:36.025 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: com.appiancorp.suiteapi.content.ContentRoleMap@6c41ca63[
+  ContentRole[name=readers,inherit=false,allowForAll=false]
+  ContentRole[name=authors,inherit=false,allowForAll=false]
+  ContentRole[name=administrators,usernames=[sergio.blazquez],inherit=false,allowForAll=false]
+  ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+  ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+  ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+  securityVector=129:SEC_PUBLIC=true,SEC_CREATOR_ADMIN=true,SEC_INH_ADMIN=false,SEC_INH_EDITOR=false,SEC_INH_VIEWER=false,SEC_ALL_ADMIN=false,SEC_ALL_EDITOR=false,SEC_ALL_VIEWER=false
+]
+2018-04-17 09:57:36.025 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=readers,inherit=false,allowForAll=false]
+2018-04-17 09:57:36.026 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=authors,inherit=false,allowForAll=false]
+2018-04-17 09:57:36.026 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=administrators,usernames=[sergio.blazquez],inherit=false,allowForAll=false]
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=denyReaders,inherit=false,allowForAll=false]
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=denyAuthors,inherit=false,allowForAll=false]
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Processing reference: ContentRole[name=denyAdministrators,inherit=false,allowForAll=false]
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Completing produce.
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Exporting binary resources.
+2018-04-17 09:57:36.027 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Serializing object to XML.
+2018-04-17 09:57:36.332 DEBUG application 13675 _a-0000e091-8c0f-8000-06a9-01ef9001ef90_87899 Object transported.
