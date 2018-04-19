@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
-    <versionUuid>_a-0000e05d-11b3-8000-9ba2-011c48011c48_1409165</versionUuid>
+    <versionUuid>_a-0000e091-8c0f-8000-06a9-01ef9001ef90_88057</versionUuid>
     <rule>
         <name>WIKI_GetIImagenesFavoritas</name>
         <uuid>_a-0000e031-0334-8000-06a9-01ef9001ef90_47125</uuid>
@@ -36,6 +36,7 @@
   local!var
 
 )
+/* cambio algo, solo añado comentario */
 )</definition>
         <namedTypedValue>
             <name>idCarpeta</name>
@@ -76,5 +77,6 @@
     <history>
         <historyInfo versionUuid="_a-0000e054-de6f-8000-06a9-01ef9001ef90_49736"/>
         <historyInfo versionUuid="_a-0000e05d-11b3-8000-9ba2-011c48011c48_1409165"/>
+        <historyInfo versionUuid="_a-0000e091-8c0f-8000-06a9-01ef9001ef90_88057"/>
     </history>
 </contentHaul>
