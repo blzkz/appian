@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<contentHaul xmlns:a="http://www.appian.com/ae/types/2009">
+    <versionUuid>_a-0000e05d-11b3-8000-9ba2-011c48011c48_1406945</versionUuid>
+    <rule>
+        <name>WIKI_GetComponenteConImagenes</name>
+        <uuid>_a-0000e031-0334-8000-06a9-01ef9001ef90_45876</uuid>
+        <description>Esta rule me devuelve todos los elementos tipo imagen de una carpeta.</description>
+        <parentUuid>_a-0000e014-0406-8000-9ba2-011c48011c48_982052</parentUuid>
+        <visibility>
+            <advertise>false</advertise>
+            <hierarchy>true</hierarchy>
+            <indexable>true</indexable>
+            <quota>false</quota>
+            <searchable>true</searchable>
+            <system>false</system>
+            <unlogged>false</unlogged>
+        </visibility>
+        <definition>load(
+  local!valor: folder(ri!idCarpeta,"documentChildren"),
+  with(
+  local!pos:if(length(local!valor)=0,{},
+  wherecontains({"jpg","png","svg","ico"},#"SYSTEM_SYSRULES_forEach"(
+      items:local!valor,
+      expression:document(fv!item,"extension")
+    ))),
+  local!var2: #"SYSTEM_SYSRULES_forEach"(
+    items:local!pos,
+    expression: 
+    local!valor[fv!item]
+  ),
+  local!fav: #"SYSTEM_SYSRULES_forEach"(
+    items: local!var2,
+    expression: if(document(tointeger(fv!item),"description")="FAV",fv!item,null)
+  ), 
+  local!var3:if(length(local!fav)&gt;0,true,false),
+  local!var3 
+  )
+)</definition>
+        <namedTypedValue>
+            <name>idCarpeta</name>
+            <type>
+                <name>int</name>
+                <namespace>http://www.w3.org/2001/XMLSchema</namespace>
+            </type>
+        </namedTypedValue>
+        <preferredEditor>legacy</preferredEditor>
+        <offlineEnabled>false</offlineEnabled>
+    </rule>
+    <roleMap public="true">
+        <role inherit="true" allowForAll="false" name="readers">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="authors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="true" allowForAll="false" name="administrators">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyReaders">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAuthors">
+            <users/>
+            <groups/>
+        </role>
+        <role inherit="false" allowForAll="false" name="denyAdministrators">
+            <users/>
+            <groups/>
+        </role>
+    </roleMap>
+    <history>
+        <historyInfo versionUuid="_a-0000e054-de6f-8000-06a9-01ef9001ef90_49545"/>
+        <historyInfo versionUuid="_a-0000e05d-11b3-8000-9ba2-011c48011c48_1406945"/>
+    </history>
+</contentHaul>
